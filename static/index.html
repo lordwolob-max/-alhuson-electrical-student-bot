@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>مساعد طلبة قسم الهندسة الكهربائية</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <h1>مساعد طلبة قسم الهندسة الكهربائية</h1>
+        <p>كلية الحصن الجامعية – جامعة البلقاء التطبيقية</p>
+      </div>
+      <button id="newChat" class="secondary">محادثة جديدة</button>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite">
+      <article class="message bot">
+        <div class="bubble">
+          أهلًا 👋 اسألني عن التسجيل، الشعب، المواد البديلة، التدريب الميداني،
+          المعادلات، الخطط أو أي إجراء متعلق بالقسم.
+        </div>
+      </article>
+    </section>
+
+    <form id="chatForm" class="composer">
+      <textarea id="messageInput" rows="2" maxlength="4000"
+        placeholder="مثلاً: أنا خريج والشعبة مسكرة، شو أعمل؟"></textarea>
+      <button type="submit" id="sendButton">إرسال</button>
+    </form>
+    <p class="note">المساعد يعتمد على ملفات وتعليمات القسم والجامعة، وإذا ما لقى معلومة مؤكدة ما بفتي.</p>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

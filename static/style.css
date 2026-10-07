@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #17202a;
+}
+.shell {
+  width: min(920px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 12px;
+  padding: 18px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+}
+h1 { margin: 0 0 6px; font-size: 1.25rem; }
+header p, .note { margin: 0; color: #667085; font-size: .9rem; }
+.messages {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  overflow-y: auto;
+  min-height: 55vh;
+}
+.message { display: flex; margin-bottom: 12px; }
+.message.user { justify-content: flex-start; }
+.message.bot { justify-content: flex-end; }
+.bubble {
+  max-width: 78%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+.user .bubble { background: #e8eef8; }
+.bot .bubble { background: #eef7ee; }
+.sources { margin-top: 8px; font-size: .78rem; color: #667085; }
+.composer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+textarea {
+  resize: none;
+  border: 1px solid #d0d5dd;
+  border-radius: 14px;
+  padding: 12px;
+  font: inherit;
+}
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 0 20px;
+  font: inherit;
+  cursor: pointer;
+  background: #1d4ed8;
+  color: white;
+}
+button.secondary {
+  background: #eef2f6;
+  color: #344054;
+  padding: 10px 14px;
+}
+button:disabled { opacity: .55; cursor: wait; }
+@media (max-width: 640px) {
+  .shell { padding: 10px; }
+  header { align-items: flex-start; }
+  .bubble { max-width: 92%; }
+  .composer { grid-template-columns: 1fr; }
+  #sendButton { min-height: 46px; }
+}

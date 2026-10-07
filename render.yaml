@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: alhuson-electrical-student-bot
+    runtime: python
+    region: frankfurt
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    autoDeploy: false
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-6-luna
+      - key: OPENAI_VECTOR_STORE_ID
+        value: vs_6ac5bd2fdd9c8191907bf7c5864533ae
+      - key: FILE_SEARCH_MAX_RESULTS
+        value: "8"
+      - key: SESSION_HISTORY_MESSAGES
+        value: "12"
+      - key: RATE_LIMIT_REQUESTS
+        value: "30"
+      - key: RATE_LIMIT_WINDOW_SECONDS
+        value: "600"

@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "description": "Runtime source labels for the Electrical Engineering student assistant.",
+  "files": [
+    {
+      "filename": "01_department_knowledge.md",
+      "display_name": "قاعدة معرفة وإجراءات قسم الهندسة الكهربائية",
+      "source_type": "department_procedure",
+      "authority": "department_internal",
+      "status": "current",
+      "priority": 70
+    },
+    {
+      "filename": "10_bachelor_regulations.pdf",
+      "display_name": "تعليمات منح درجة البكالوريوس - جامعة البلقاء التطبيقية",
+      "source_type": "official_university",
+      "authority": "university_official",
+      "status": "current",
+      "priority": 100
+    },
+    {
+      "filename": "11_field_training_regulations.pdf",
+      "display_name": "تعليمات التدريب الميداني - جامعة البلقاء التطبيقية",
+      "source_type": "official_university",
+      "authority": "university_official",
+      "status": "current",
+      "priority": 100
+    },
+    {
+      "filename": "12_course_equivalency_procedure.pdf",
+      "display_name": "خطوات السير بمعادلات المواد الإلكترونية",
+      "source_type": "official_department",
+      "authority": "department_official",
+      "status": "current",
+      "priority": 90
+    },
+    {
+      "filename": "13_military_service_equivalency.pdf",
+      "display_name": "خطوات السير بمعادلة خدمة العلم",
+      "source_type": "official_department",
+      "authority": "department_official",
+      "status": "current",
+      "priority": 90
+    },
+    {
+      "filename": "20_power_program_plan_2026_2027.pdf",
+      "display_name": "خطة برنامج القوى الكهربائية 2026-2027",
+      "source_type": "study_plan",
+      "authority": "department_official",
+      "status": "current",
+      "priority": 95,
+      "academic_year": "2026-2027"
+    },
+    {
+      "filename": "21_engineering_requirements_2026_2027.docx",
+      "display_name": "متطلبات الهندسة 2026-2027",
+      "source_type": "study_plan",
+      "authority": "faculty_official",
+      "status": "current",
+      "priority": 95,
+      "academic_year": "2026-2027"
+    },
+    {
+      "filename": "30_field_training_committee.docx",
+      "display_name": "إعلان لجنة التدريب الميداني - قسم الهندسة الكهربائية",
+      "source_type": "official_department",
+      "authority": "department_official",
+      "status": "current",
+      "priority": 90,
+      "academic_year": "2026-2027"
+    },
+    {
+      "filename": "31_faculty_members.docx",
+      "display_name": "أسماء الهيئة التدريسية - قسم الهندسة الكهربائية",
+      "source_type": "official_department",
+      "authority": "department_official",
+      "status": "current",
+      "priority": 85
+    },
+    {
+      "filename": "40_department_program_applicability.md",
+      "display_name": "نطاق برامج قسم الهندسة الكهربائية للتدريب الميداني",
+      "source_type": "department_procedure",
+      "authority": "department_internal",
+      "status": "current",
+      "priority": 98
+    }
+  ]
+}
